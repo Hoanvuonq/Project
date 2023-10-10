@@ -7,6 +7,7 @@ import {
 } from "@material-tailwind/react";
 import Logo from "../../../Assets/logo.png"
 import IconMenu from "../../../Assets/icon-menu.png"
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
@@ -14,16 +15,20 @@ const Header = () => {
     const openDrawerLeft = () => setOpenLeft(true);
     const closeDrawerLeft = () => setOpenLeft(false);
     return (
-        <div className="flex justify-between pr-4 sm:p-0 sm:px-20 py-5 items-center">
+        <div className="flex justify-between pr-4 sm:px-20 py-5 items-center relative z-20">
             <img src={Logo} alt="Logo" className="w-[100px] h-[50px]" />
             <div className="sm:flex gap-5 hidden">
-                <p className="text-white font-bold">About</p>
-                <p className="text-white font-bold">Tokenomics</p>
-                <p className="text-white font-bold">Community</p>
+                <Link to="#about">
+                    <p className="text-white  font-bold">About</p>
+                </Link>
+                <Link to="#tokenomics">
+                    <p className="text-white  font-bold">Tokenomics</p>
+                </Link>
+                <Link to="#community">
+                    <p className="text-white  font-bold">Community</p>
+                </Link>
             </div>
-            <Button className="block sm:hidden" onClick={openDrawerLeft}>
-                <img src={IconMenu} alt="Logo" width={24} height={24} className="" />
-            </Button>
+            <img className="block sm:hidden" onClick={openDrawerLeft} src={IconMenu} alt="Logo" width={24} height={24} />
             <Drawer
                 placement="left"
                 open={openLeft}
@@ -33,9 +38,15 @@ const Header = () => {
                 <div className="mb-6 flex items-center justify-between">
                 <Typography variant="h5" color="blue-gray">
                     <div className="mt-10">
-                        <p className="py-2 font-bold">About</p>
-                        <p className="py-2 font-bold">Tokenomics</p>
-                        <p className="py-2 font-bold">Community</p>
+                        <Link to="#about">
+                            <p className="py-2 font-bold">About</p>
+                        </Link>
+                        <Link to="#tokenomics">
+                            <p className="py-2 font-bold">Tokenomics</p>
+                        </Link>
+                        <Link to="#community">
+                            <p className="py-2 font-bold">Community</p>
+                        </Link>
                     </div>
                 </Typography>
                 <IconButton
