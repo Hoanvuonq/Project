@@ -11,13 +11,13 @@ const Tokenomics = () => {
                <div className="w-[75%]">
                     <h2 className="text-title sm:text-[120px] !text-6xl text-center pt-10">Tokenomics</h2>
                     <div className=" sm:flex block gap-10 text-content items-center">
-                        <p className="text-content text-center py-4 sm:py-0">Max Supply: 420,690,000,000,000</p>
+                        <p className="text-content text-center py-4 sm:py-0">Max Supply: </p>
                         <p className="text-content text-center py-4 sm:py-0">Locked Liquidity <a href="">View locker</a></p>
                         <p className="text-content text-center py-4 sm:py-0">1% Tax On All Transactions</p>
                         <p className="text-content text-center py-4 sm:py-0">Contract Is Audited & Fully Renounced</p>
                     </div>
                </div>
-               <h1 className="text-title sm:!text-3xl !text-2xl text-center mt-10">CA: 0x0b0a8c7c34374c1d0c649917a97eee6c6c929b1b</h1>
+               <h1 className="text-title sm:!text-3xl !text-2xl text-center mt-10">CA:</h1>
             </div>
         </section>
     );

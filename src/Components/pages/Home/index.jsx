@@ -26,14 +26,6 @@ const Home = () => {
               <img src={Icon4} alt="Icon" width={60} height={60} />
               <img src={Icon5} alt="Icon" width={60} height={60} />
             </div>
-            <div className="flex gap-5">
-              <Link className="text-white py-2 px-3 border border-white rounded-full text-center font-semibold text-sm all-center w-[166px] h-[60px]">POLONIEX</Link>
-              <Link className="text-white py-2 px-3 border border-white rounded-full text-center font-semibold text-sm all-center w-[166px] h-[60px]">BITGET</Link>
-            </div>
-            <div className="flex gap-5 pt-5">
-              <Link className="text-white py-2 px-3 border border-white rounded-full text-center font-semibold text-sm all-center w-[166px] h-[60px]">POLONIEX</Link>
-              <Link className="text-white py-2 px-3 border border-white rounded-full text-center font-semibold text-sm all-center w-[166px] h-[60px]">BITGET</Link>
-            </div>
           </div>
         </section>
         <About/>
